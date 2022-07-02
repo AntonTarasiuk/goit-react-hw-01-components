@@ -35,7 +35,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
                 <StatValue>{stats.views}</StatValue>
             </StatsElement>
             <StatsElement>
-                <StatLabel>likes</StatLabel>
+                <StatLabel>Likes</StatLabel>
                 <StatValue>{stats.likes}</StatValue>
             </StatsElement>
         </Stats>

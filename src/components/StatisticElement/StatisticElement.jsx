@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatElement, Percentage } from './StatisticElement.styled';
-import { getRandomHexColor } from 'components/Statistics/RendomeColorPicker';
+import { getRandomHexColor } from 'components/Statistics/RandomeColorPicker';
 
 export const StatisticElement = ({ label, percentage }) => {
     return (

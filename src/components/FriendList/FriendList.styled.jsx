@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
 
-export const FriendList = styled.ul`
-    
+export const Friends = styled.ul`
+    width: 300px;
 `;

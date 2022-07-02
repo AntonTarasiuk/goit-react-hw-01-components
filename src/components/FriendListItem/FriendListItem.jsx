@@ -1,12 +1,18 @@
-import { FileListItem, FriendAvatar, OnlineStatus } from "./FriendListItem.styled"
+import PropTypes from 'prop-types'
+import { FileListItem, FriendAvatar, OnlineStatus, FriendName } from "./FriendListItem.styled"
 
-export const FriendListItem = ({ avatar, name, onlineStatus}) => {
-    console.log(onlineStatus)
+export const FriendListItem = ({ avatar, name, onlineStatus }) => {
     return (
         <FileListItem>
             <OnlineStatus style={{backgroundColor: onlineStatus ? "green" : "red"}}></OnlineStatus>
             <FriendAvatar src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+            <FriendName>{name}</FriendName>
         </FileListItem>
     )
+}
+
+FriendListItem.propTypes = {
+    onlineStatus: PropTypes.bool.isRequired,
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
 }
